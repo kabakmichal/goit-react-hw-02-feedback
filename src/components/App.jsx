@@ -4,7 +4,7 @@ import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Notification } from './Notification/Notification';
 import { Statistics } from './Statistics/Statistics';
 
-class App extends React.Component {
+export class App extends React.Component {
   //stats on start
   state = {
     good: 0,
@@ -84,5 +84,3 @@ class App extends React.Component {
     );
   }
 }
-
-export default App;
