@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/kabakmichal/goit-react-hw-02-feedback/static/css/main.1fd14de2.css",
-    "main.js": "/kabakmichal/goit-react-hw-02-feedback/static/js/main.e6f13fb4.js",
+    "main.js": "/kabakmichal/goit-react-hw-02-feedback/static/js/main.9e909d28.js",
     "index.html": "/kabakmichal/goit-react-hw-02-feedback/index.html",
     "main.1fd14de2.css.map": "/kabakmichal/goit-react-hw-02-feedback/static/css/main.1fd14de2.css.map",
-    "main.e6f13fb4.js.map": "/kabakmichal/goit-react-hw-02-feedback/static/js/main.e6f13fb4.js.map"
+    "main.9e909d28.js.map": "/kabakmichal/goit-react-hw-02-feedback/static/js/main.9e909d28.js.map"
   },
   "entrypoints": [
     "static/css/main.1fd14de2.css",
-    "static/js/main.e6f13fb4.js"
+    "static/js/main.9e909d28.js"
   ]
 }
