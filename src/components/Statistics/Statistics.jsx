@@ -1,27 +1,31 @@
 import PropTypes from 'prop-types';
 import StatisticsCSS from './Statistics.module.css';
 
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+export const Statistics = ({
+  good,
+  neutral,
+  bad,
+  total,
+  positivePercentage,
+}) => {
   const Array = [
     [1, `Good: ${good}`],
     [2, `Neutral: ${neutral}`],
     [3, `Bad: ${bad}`],
     [4, `Total: ${total}`],
-    [5, `Positive feedback: ${positivePercentage}`],
+    [5, `Positive feedback: ${positivePercentage} % `],
   ];
 
   return (
     <ul className={StatisticsCSS.list}>
-      {Array.map(([id, superString]) => {
+      {Array.map(([id, superString]) => (
         <li key={id} className={StatisticsCSS.item}>
           <span className={StatisticsCSS.paragraph}>{superString}</span>
-        </li>;
-      })}
+        </li>
+      ))}
     </ul>
   );
 };
-
-export default Statistics;
 
 Statistics.propTypes = {
   good: PropTypes.number.isRequired,

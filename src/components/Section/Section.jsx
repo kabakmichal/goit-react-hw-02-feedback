@@ -1,14 +1,12 @@
 import PropTypes from 'prop-types';
 import SectionCSS from './Section.module.css';
 
-const Section = ({ title, children }) => {
+export const Section = ({ title, children }) => (
   <div className={SectionCSS.container}>
-    <h2 className={SectionCSS.secondHeader}>{title}</h2>
+    <h2 className={SectionCSS.headerSecond}>{title}</h2>
     {children}
-  </div>;
-};
-
-export default Section;
+  </div>
+);
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,

@@ -1,13 +1,8 @@
 import React from 'react';
-import './App.css';
-
-import Section from './Section/Section';
-
-import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
-
-import Notification from './Notification/Notification';
-
-import Statistics from './Statistics/Statistics';
+import { Section } from './Section/Section';
+import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
+import { Notification } from './Notification/Notification';
+import { Statistics } from './Statistics/Statistics';
 
 class App extends React.Component {
   //stats on start
@@ -18,22 +13,16 @@ class App extends React.Component {
   };
 
   //increment function for buttons and stats
-  onLeaveFeedback = whichButtonWasClicked => {
+  feedback = whichButtonWasClicked => {
     switch (whichButtonWasClicked) {
       case 'good':
-        this.setState(state => ({
-          good: state.good + 1,
-        }));
+        this.setState(state => ({ good: state.good + 1 }));
         break;
       case 'neutral':
-        this.setState(state => ({
-          neutral: state.neutral + 1,
-        }));
+        this.setState(state => ({ neutral: state.neutral + 1 }));
         break;
       case 'bad':
-        this.setState(state => ({
-          bad: state.bad + 1,
-        }));
+        this.setState(state => ({ bad: state.bad + 1 }));
         break;
       default:
         return 0;
@@ -75,7 +64,7 @@ class App extends React.Component {
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
-            onLeaveFeedBack={this.whichButtonWasClicked}
+            onLeaveFeedback={this.feedback}
           ></FeedbackOptions>
         </Section>
         <Section title="Statistics">
