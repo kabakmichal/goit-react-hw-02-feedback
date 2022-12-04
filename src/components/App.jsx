@@ -64,7 +64,7 @@ export const App = () => {
         <FeedbackOptions
           options={['good', 'neutral', 'bad']}
           onLeaveFeedback={fooOnLeaveFeedback}
-        />
+        ></FeedbackOptions>
       </Section>
       <Section title="Statistics">
         {total === 0 ? (
